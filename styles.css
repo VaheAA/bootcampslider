@@ -4,10 +4,10 @@
 body {
     margin: 0;
     padding: 0;
+    background: url('/images/pattern-quotes.svg') 250px 280px, url('/images/pattern-bg.svg') 570px 30px;
+    background-repeat: no-repeat;
 }
 main {
-    background: url('/images/pattern-quotes.svg') 50px 100px, url('/images/pattern-bg.svg') 350px 50px;
-    background-repeat: no-repeat;
     max-width: 1000px;
     margin: 0 auto;
 }
@@ -32,12 +32,19 @@ main {
     background-repeat: no-repeat;
     background-position-x: right;
     height: 840px;
+    margin-top: 100px;
+}
+#test-2 {
+    background-image: url('/images/image-john.jpg');
+    background-repeat: no-repeat;
+    background-position-x: right;
+    height: 840px;
+    margin-top: 100px;
 }
 .speech {
     width: 55%;
     position: relative;
     top: 30%;
-
 }
 .speech-text {
     line-height: 1.5;
@@ -46,3 +53,34 @@ main {
 #test-2 {
     display: none;
 }
+.slider-switcher {
+    position: relative;
+    left: 95%;
+    top: 20px;
+    width: 100px;
+    height: 40px;
+    border-radius: 15px;
+    background-color: aliceblue;
+}
+.slider-switcher a {
+    font-size: 28px;
+    margin-left: 21px;
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
