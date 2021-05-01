@@ -5,7 +5,7 @@ const prev = document.querySelector('.prev');
 let slideIndex = 1;
 showSlides(slideIndex);
 
-const plusSlides = (n) => {
+const switchSlides = (n) => {
   showSlides(slideIndex += n);
 }
 
@@ -25,9 +25,9 @@ function showSlides(n) {
 }
 
 next.addEventListener('click', () => {
-    plusSlides(1);
+  switchSlides(1);
 });
 prev.addEventListener('click', () => {
-    plusSlides(-1);
+  switchSlides(-1);
 });
 
