@@ -60,7 +60,7 @@ body {
     text-align: center;
 }
 
-.slider_switch > a {
+.slider_switch > img {
     cursor: pointer;
     padding: 0 5px 0 5px;
     transform: scale(1.2);
