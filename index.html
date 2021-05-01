@@ -2,42 +2,56 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-  <link rel="stylesheet" href="/styles.css">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-   <script src="/script.js"></script>
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="/css/breakpoints.css">
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet"> 
   <title>Frontend Mentor | Coding Bootcamp Testimonials Slider</title>
+
 </head>
 <body>
-<main>
-<div class="slider-container">
-  <div id="test-1" class="testSliders slider">
-    <div class="speech">
-  <p class="speech-text"> “ I’ve been interested in coding for a while but never taken the jump, until now. 
+  <main>
+    <div class="slider_container">
+      <div class="slider slide_1">
+        <div class="left">
+          <img src="/images/image-tanya.jpg" class="avatar" alt="">
+        </div>
+        <div class="right">
+    <div class="content_div">
+  <p class="para">“I’ve been interested in coding for a while but never taken the jump, until now. 
   I couldn’t recommend this course enough. I’m now in the job of my dreams and so 
-  excited about the future. ”</p>
-  <p class="credits"><span class="name">Tanya Sinclair</span> <span class="position">UX Engineerr</span></p>
-  <div class="slider-switcher" >
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-  </div>
+  excited about the future. ”</p> 
+  <div class="credits">
+  <span class="name">Tanya Sinclair</span> 
+  <span class="position">UX Engineer</span> 
 </div>
-  </div>
-  <div id="test-2" class="testSliders slider">
-    <div class="speech">
- <p class="speech-text">“ If you want to lay the best foundation possible I’d recommend taking this course. 
-  The depth the instructors go into is incredible. I now feel so confident about 
-  starting up as a professional developer. ”</p>
-  <p class="credits"><span class="name">John Tarkpor</span> <span class="position">Junior Front-end Developer</span></p> 
-  <div class="slider-switcher" >
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-  </div>
-   </div>
 </div>
+</div>
+      </div>
+<div class="slider slide_2">
+  <div class="left">
+    <img src="/images/image-john.jpg" class="avatar" alt="">
+
+  </div>
+  <div class="right">
+<div class="content_div">
+<p class="para">“ If you want to lay the best foundation possible I’d recommend taking this course. The depth the instructors go into is incredible. I now feel so confident about starting up as a professional developer. ”</p> 
+<div class="credits">
+<span class="name">John Tarkpor</span> 
+<span class="position"> Junior Front-end Developer</span> 
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="slider_switch">
+  <a class="prev" "><img src="/images/icon-prev.svg" alt="" ></a> 
+  <a class="next" "><img src="/images/icon-next.svg" alt="" ></a> 
 </div>
 </main>
+<script src="/js/script.js"></script>
 </body>
 </html>
